@@ -20,11 +20,12 @@
         console.log("Mon age est:" ,age)
         console.log("mon nom est" + name + "et j'ai" + age + "ans")
         console.log(`mon nom est ${name} et j'ai ${age} ans`)
-        var username= prompt("veuillez saisir votre nom")
-        //alert(`votre nom est : ${username}`)
+        // var username= prompt("veuillez saisir votre nom")
+        // alert(`votre nom est : ${username}`)
 
         /*condition javascript*/
         const time = new Date().getHours()
+
         console.log(time)
         if(time <10){
             console.log("bonjour")
@@ -35,6 +36,40 @@
         }
         else{
             console.log("bonne soirée")
+        }
+
+
+        //calculer la moyenne//
+
+        // let note1 =12
+        // let note2 =10
+
+
+          let note1 = parseFloat(prompt("Entrer la premiére note :"))
+          let note2 = parseFloat(prompt("Entrer la deuxiéme note :"))
+
+        //   vérification des notes
+
+        if((note1<0 || note1>20)||(note2<0 || note2>20)){
+            console.error("Erreur ,les notes doivent etre comprise entre 0 et 20")
+        }
+        else{ 
+
+           let moy = (note1 + note2)/2
+
+        console.log("Note 1 :", note1)
+        console.log("Note 2 :", note2)
+        console.log("la moyenne est :",moy)
+
+       if (moy>10){
+        console.log("bravo vous avez réuser")
+       }
+       else if(moy==10){
+        console.log("passable")
+       }
+       else{
+        console.log("ajourné")
+       }
         }
 
         
