@@ -39,11 +39,7 @@
         }
 
 
-        //calculer la moyenne//
-
-        // let note1 =12
-        // let note2 =10
-
+        //calculer la moyenne
 
           let note1 = parseFloat(prompt("Entrer la premiére note :"))
           let note2 = parseFloat(prompt("Entrer la deuxiéme note :"))
@@ -72,8 +68,25 @@
        }
         }
 
-        
+        // Affivher la date et l'heure
+       const maintenant = new Date();
+       console.log(maintenant,'date ');
+       
+       const jour = maintenant.getDate();
+       const mois = maintenant.getMonth();
+       
+       
+       const annee = maintenant.getFullYear();
+       const heures = maintenant.getHours();
+       const minutes = maintenant.getMinutes();
+       const secondes = maintenant.getSeconds();
+       
+       console.log("La date :", jour + "/" + mois + "/" + annee);
+       console.log("L'heure :", heures + ":" + minutes + ":" + secondes);
 
+
+
+    
     </script>
     
 </body>
