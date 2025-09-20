@@ -26,47 +26,49 @@
         /*condition javascript*/
         const time = new Date().getHours()
 
-        console.log(time)
-        if(time <10){
-            console.log("bonjour")
-        }
-        else if(time >10){
-            console.log("bonne journée")
+        // console.log(time)
+        // if(time <10){
+        //     console.log("bonjour")
+        // }
+        // else if(time >10){
+        //     console.log("bonne journée")
 
-        }
-        else{
-            console.log("bonne soirée")
-        }
+        // }
+        // else{
+        //     console.log("bonne soirée")
+        // }
+
+        time<10?console.log("bonjour"):(time<18)? console.log("bonne journée"):console.log("bonne soirée")
 
 
         //calculer la moyenne
 
-          let note1 = parseFloat(prompt("Entrer la premiére note :"))
-          let note2 = parseFloat(prompt("Entrer la deuxiéme note :"))
+        //   let note1 = parseFloat(prompt("Entrer la premiére note :"))
+        //   let note2 = parseFloat(prompt("Entrer la deuxiéme note :"))
 
         //   vérification des notes
 
-        if((note1<0 || note1>20)||(note2<0 || note2>20)){
-            console.error("Erreur ,les notes doivent etre comprise entre 0 et 20")
-        }
-        else{ 
+        // if((note1<0 || note1>20)||(note2<0 || note2>20)){
+        //     console.error("Erreur ,les notes doivent etre comprise entre 0 et 20")
+        // }
+        // else{ 
 
-           let moy = (note1 + note2)/2
+    //        let moy = (note1 + note2)/2
 
-        console.log("Note 1 :", note1)
-        console.log("Note 2 :", note2)
-        console.log("la moyenne est :",moy)
+    //     console.log("Note 1 :", note1)
+    //     console.log("Note 2 :", note2)
+    //     console.log("la moyenne est :",moy)
 
-       if (moy>10){
-        console.log("bravo vous avez réuser")
-       }
-       else if(moy==10){
-        console.log("passable")
-       }
-       else{
-        console.log("ajourné")
-       }
-        }
+    //    if (moy>10){
+    //     console.log("bravo vous avez réuser")
+    //    }
+    //    else if(moy==10){
+    //     console.log("passable")
+    //    }
+    //    else{
+    //     console.log("ajourné")
+    //    }
+    //     }
 
         // Affivher la date et l'heure
        const maintenant = new Date();
@@ -74,8 +76,6 @@
        
        const jour = maintenant.getDate();
        const mois = maintenant.getMonth();
-       
-       
        const annee = maintenant.getFullYear();
        const heures = maintenant.getHours();
        const minutes = maintenant.getMinutes();
@@ -83,6 +83,83 @@
        
        console.log("La date :", jour + "/" + mois + "/" + annee);
        console.log("L'heure :", heures + ":" + minutes + ":" + secondes);
+
+       var nomber ='5'
+       if(nomber==5){
+        console.log("comparaison non stricte , la valeure est égale apres conversion")
+
+       }else{
+        console.log("comparaison non stricte , la valeur est différante")
+       }
+       
+       
+    //    if(nomber===5){
+    //     console.log("comparaison non stricte , la valeure et le type sont égaux")
+
+    //    }else{
+    //     console.log("comparaison non stricte , la valeur ou le type est différante")
+    //    }
+
+    // conditions ternaire
+
+    nombre = "5"?console.log("comparaison non stricte , la valeure et le type sont égaux"):console.log("comparaison non stricte , la valeur ou le type est différante")
+
+
+    //    Switch case :  permet d'évaluer une variable selon sa valeur
+
+    var color ="orange"
+    switch (color) {
+        case "rouge": console.log("Arretez le feu est rouge")
+            
+            break;
+
+          case "orange": console.log("Attention le feu est orange")
+            
+            break;
+
+          case "ver":  console.log("Aller y le feu est ver")
+            
+            break;
+    
+        default: console.log("color inconnue")
+            break;
+    }
+     
+    //   les fonctions
+    function salutations() {
+        console.log("bonjour je suis la meilleur dévloppeuse")
+    }
+    salutations()
+
+    function somme(nombre1 , nombre2) {
+       return nombre1+nombre2
+    }
+    console.log(somme(12,3))
+
+
+    function carrée(nombre) {
+        return nombre*nombre
+        
+    }
+    console.log(carrée(3))
+
+    function incriment(n) {
+       
+        return n+1
+    }
+    console.log(incriment(5))
+
+    function partie(x) {
+        if(x%2===0){
+            console.log(`${x} est pair` )
+
+        }
+        else{
+            console.log(`${x} est impair`)
+        }
+    }
+     (partie(2))
+
 
 
 
