@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function addition(a,b){
+            return a+b
+        }
+        console.log(addition(1,8))
+
+        const additionArrow = (a,b) => a+b
+        console.log(additionArrow(5,8))
+
+        function multiplication(c,d){
+            const resultat=c*d
+            return resultat
+        }
+        console.log(multiplication(4,9))
+
+        const multiplicationArrow=(c,d)=>{
+            const resultat=c*d
+            return resultat
+        }
+        console.log(multiplicationArrow(7,1))
+
+
+        function EstPaire(p){            
+            return (p%2 === 0)? true: false
+        }
+        console.log(EstPaire(9))
+
+        const EstPaireArrow = (p) => (p%2 === 0)
+        console.log(EstPaire(2))
+
+        function affich(){
+            console.log("Hello world")
+        }
+        affich()
+
+        const affichArrow = () => console.log("Hello world")
+        affichArrow()
+
+
+    </script>
+</body>
+</html>
