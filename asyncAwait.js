@@ -16,13 +16,14 @@ const base_URL = "https://jsonplaceholder.typicode.com"
 
 const getUsers = async()=>{
     try{
-    const response =await fetch (`${base_URL}/users`)
-    const data = await response.json()
-    console.log(data)
-    }
+         const response =await fetch (`${base_URL}/users`)
+         const data = await response.json()
+         console.log(data)
+        }
     catch(error){
-console.log(error);
+       console.log(error);
 
-    }}
+    }
+}
 
 getUsers()
