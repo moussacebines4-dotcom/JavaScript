@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les promesses</title>
+</head>
+<body>
+    <h1> Les promesses est un objet qui reler le code de production (il provoque la promesse) et le code de consommation(consomme et attend la promesse)</h1>
+    <p id="demo"></p>
+    <script>
+        function mydisplayer(somme) {
+            document.getElementById("demo").innerHTML=somme    
+        }
+        let myPromise =new Promise(function(myResolve ,myReject){
+            let x=0
+            if (x===0) {
+                myResolve("Ok")
+            }
+            else{
+                myReject("ERROR")
+            }
+
+        })
+        myPromise.then(
+            function (value) {
+                mydisplayer(value)  
+            },
+            function (error) {
+                mydisplayer(error)  
+            }
+        )
+
+
+
+
+    </script>
+
+</body>
+</html>
